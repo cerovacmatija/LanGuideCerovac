@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanGuideCerovac.UsersPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#FF8080" Padding="30" CornerRadius="0">
+                <Label Text="Users" HorizontalTextAlignment="Center" TextColor="White" FontSize="28"/>
+            </Frame>
+            
+            <SearchBar Placeholder="Search by ID" TextChanged="Search_ID"/> 
+            <Button Text="Sort Descending" Clicked="Descending_Button"/>
+            <Button Text="Sort Ascending" Clicked="Ascending_Button"/>
+
+            <ListView x:Name="testListView" Margin="25" RowHeight="60">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding id_user}"/>
+                                <Label Text="{Binding create_time}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanGuideCerovac.LanguagesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#FF8080" Padding="30" CornerRadius="0">
+                <Label Text="Languages" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            </Frame>
+
+            <Button Text="Sort Ascending" Clicked="Ascending_Button_Clicked"/>
+
+            <Button Text="Sort Descending" Clicked="Descending_Button_Clicked"/>
+
+            <ListView x:Name="testListView" Margin="25" RowHeight="60">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding language}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

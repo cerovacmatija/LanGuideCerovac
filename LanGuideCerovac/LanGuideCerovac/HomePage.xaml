@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanGuideCerovac.HomePage">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FF8080">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                </StackLayout>
+                <ScrollView Grid.Row="1">
+                    <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                        <Label Text="Welcome to the LanGuide Users and result data center" TextColor="black" FontSize="30" FontAttributes="Bold"/>
+                        <Label Text="Browse and download data about users and their activity on the LanGuide app" TextColor="black" FontSize="20"/>
+                        <Label Text=" "/>
+                        <Button BackgroundColor="white" Text="Users" HeightRequest="80" Clicked="Button_is_Clicked" FontSize="25" TextColor="black"/>
+                        <Button BackgroundColor="white" Text="Results" HeightRequest="80" Clicked="Button_is_Clicked1" FontSize="25" TextColor="black"/>
+                        <Button BackgroundColor="white" Text="Languages" HeightRequest="80" Clicked="Button_is_Clicked2" FontSize="25" TextColor="black"/>
+                        <Label Text=""/>
+                        <Label Text=""/>
+                        <Button BackgroundColor="black" Text="Logout" HeightRequest="60" Clicked="Button_is_Clicked3" FontSize="25" TextColor="white"/>
+
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

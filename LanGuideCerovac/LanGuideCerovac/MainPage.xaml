@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanGuideCerovac.MainPage">
+
+    <StackLayout BackgroundColor="#FF8080">
+        <Grid VerticalOptions="CenterAndExpand" Margin="40" RowSpacing="35">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Entry x:Name="EntryEmail" Placeholder="User name" Keyboard="Email" Grid.Row="0" PlaceholderColor="DarkSlateGray"/>
+                    <Entry x:Name="EntryPassword" Placeholder="Password"  IsPassword="True"  Grid.Row="1" PlaceholderColor="DarkSlateGray"/>
+                    <Button Text="Login" Grid.Row="2" BackgroundColor="White" TextColor="Black" Clicked="Login_Button_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

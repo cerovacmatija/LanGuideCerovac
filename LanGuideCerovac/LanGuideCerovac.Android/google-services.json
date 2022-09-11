@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "743114531739",
+    "project_id": "languidecerovac",
+    "storage_bucket": "languidecerovac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743114531739:android:aeb3a04a75fca245ea773e",
+        "android_client_info": {
+          "package_name": "com.companyname.languidecerovac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743114531739-qn6qetts0ie720nurfv9753gsviu0vdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPkOMaoLycOwdAL1GL6ZYpz2e1uruLhas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743114531739-qn6qetts0ie720nurfv9753gsviu0vdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
